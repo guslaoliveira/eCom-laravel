@@ -33,6 +33,32 @@
   </body>
 
   <style>
+
+      .containerCarousel {
+          width: 280px;
+          height: 280px;
+          background-color: red; /* For browsers that do not support gradients */
+          background-image: linear-gradient(0deg, grey, white);
+      }
+
+      /* resize images */
+      .containerCarousel img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+    .aligncenter {
+    text-align: center;
+    }
+
+
+     .custom-product {
+        width: 150px;
+        display: inline-block;
+     }
+     
      .custom-login{
      
       top: 50%;
@@ -48,6 +74,14 @@
           height: 100vh;
     }
     
+    
+    #grad1 {
+      height: 100px;
+      background-color: red; /* For browsers that do not support gradients */
+      background-image: linear-gradient(0deg, grey, white);
+    }
+
+
     #login .container #login-row #login-column #login-box {
           margin-top: 120px;
           max-width: 600px;
