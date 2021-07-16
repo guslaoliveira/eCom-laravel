@@ -2,7 +2,7 @@
     @section('content')
 
 
- <body>
+ <body background-color='#FFFFFF'>
 
 
  <p class="aligncenter">  
@@ -13,9 +13,9 @@
 
         <?php
 
-            $srcDefaultAddr = "http://127.0.0.1/img/LgSmartPhone.jpg" ;
-            $srcDefaultname= "Generic Lg SmartFone";
-            $srcDefaultDescription= "Generic LgSmartFone no data";
+            $srcDefaultAddr = "./img/iphone-12.jpg" ;
+            $srcDefaultname= "iPhone 12 Pro Max Grafite";
+            $srcDefaultDescription= "iPhone 12 Pro Max Grafite, 256GB - MGDC3BZ/A";
 
   
                 foreach ($produtos as $value) {
@@ -39,7 +39,7 @@
   <div class="carousel-item active">
       <div class="containerCarousel">
      
-        <img   src="{{$srcDefaultAddr}}" alt="..." class="w-100 p-3" style="background-color: #eee;"  alt="Max-width 100%">
+        <img   src="{{$srcDefaultAddr}}" alt="..." class="w-100 p-3"   alt="...">
     
       </div>
              <div id="grad1" style="text-align:center;">
@@ -57,7 +57,7 @@
            <div class="carousel-item">
             <div class="containerCarousel">
            
-             <img  src="{{$item['gallery']}}" alt= "..."  class="w-100 p-3" style="background-color: #eee; alt="Max-width 100%">
+             <img  src="{{$item['gallery']}}"  class="w-100 p-3" alt=".....">
             
             
             </div>
@@ -82,6 +82,26 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+
+    <div class="treding-wrapper">
+    <h3>Treding Products</h3>
+    @foreach($produtos as $item)                 
+            
+            <div class="treding-itens">           
+             <img  class="treding-images" src="{{$item['gallery']}}" alt= "..." >              
+                       <div  class="">
+                       <o>{{$item['name']}}</p>            
+                      </div> 
+            </div> 
+            
+       
+    @endforeach 
+    </div>
+
+
+
+
 </p>   
 
 </body>

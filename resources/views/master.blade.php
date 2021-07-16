@@ -39,15 +39,27 @@
           height: 280px;
           background-color: red; /* For browsers that do not support gradients */
           background-image: linear-gradient(0deg, grey, white);
+          margin: 0 auto;
       }
 
       /* resize images */
       .containerCarousel img {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        /*margin-left: auto;
+        margin-right: auto; */
+        margin: 0 auto;
+
       }
 
+      .treding-images {
+        height: 100px;
+      }
+
+      .treding-itens {
+          float: left;
+          width: 10%;
+
+      }
 
     .aligncenter {
     text-align: center;
@@ -70,15 +82,15 @@
     body {
           margin: 0;
           padding: 0;
-          background-color: #17a2b8;
+          background-color: #c7c4bd;
           height: 100vh;
     }
     
     
     #grad1 {
       height: 100px;
-      background-color: red; /* For browsers that do not support gradients */
-      background-image: linear-gradient(0deg, grey, white);
+      /*background-color: red;  For browsers that do not support gradients */
+      /* background-image: linear-gradient(0deg, grey, white); */
     }
 
 
