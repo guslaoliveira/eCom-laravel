@@ -16,11 +16,11 @@ class UserAuth
      */
     public function handle(Request $request, Closure $next)
     {
-      if ($request->path()=="login" && $request->session()->has('user)')  ) {
+      if ($request->path()=="login" && $request->session()->has('user)')) {
           # code...
           return redirect('/');
       }
         
-        return $next($request);
+      return $next($request);
     }
 }
