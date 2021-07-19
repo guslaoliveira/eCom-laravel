@@ -20,7 +20,7 @@
                      <h4>Details:</h4> 
                      <p>{{$produto['description']}}</p> 
                      <h4>Category:</h4> 
-                     <p>Category: {{$produto['category']}}</h4> 
+                     <p>{{$produto['category']}}</h4> 
                      <br>
                      <br> 
                      <button type="button" class="btn btn-primary">Add to Cart</button>
