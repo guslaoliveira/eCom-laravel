@@ -23,10 +23,16 @@
                      <p>{{$produto['category']}}</h4> 
                      <br>
                      <br> 
-                     <button type="button" class="btn btn-primary">Add to Cart</button>
+                     <form action="/add_to_cart" method="POST">
+                     @csrf
+                        <input type="hidden" name="product_id" value={{ $produto['id']}}>
+                        <button  class="btn btn-primary">Add to Cart</button>
+
+                     </form>
+                     
                      <br>
                      <br>
-                     <button type="button" class="btn btn-success">By Now</button>
+                     <button class="btn btn-success">By Now</button>
                     
                  </div>
 
