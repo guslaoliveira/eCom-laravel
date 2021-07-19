@@ -16,11 +16,12 @@
             $srcDefaultAddr = "./img/iphone-12.jpg" ;
             $srcDefaultname= "iPhone 12 Pro Max Grafite";
             $srcDefaultDescription= "iPhone 12 Pro Max Grafite, 256GB - MGDC3BZ/A";
+            $srcDefaultIdValue = 1;
 
   
                 foreach ($produtos as $value) {
                   
-                    if($value['id'] ==1) {
+                    if($value['id'] == $srcDefaultIdValue) {
 
                       $srcDefaultAddr = $value['gallery'];
                       $srcDefaultname =   $value['name'];
@@ -38,9 +39,9 @@
 
   <div class="carousel-item active">
       <div class="containerCarousel">
-     
+        <a href="detail/{{$srcDefaultIdValue}}"> 
         <img   src="{{$srcDefaultAddr}}" alt="..." class="w-100 p-3"   alt="...">
-    
+        </a>
       </div>
              <div id="grad1" style="text-align:center;">
              <h3>{{$srcDefaultname}}</h3>
@@ -56,9 +57,9 @@
         @if($item['id'] !=1)  
            <div class="carousel-item">
             <div class="containerCarousel">
-           
+             <a href="detail/{{$item['id']}}"> 
              <img  src="{{$item['gallery']}}"  class="w-100 p-3" alt=".....">
-            
+              </a>
             
             </div>
 
@@ -88,11 +89,13 @@
     <h3>Treding Products</h3>
     @foreach($produtos as $item)                 
             
-            <div class="treding-itens">           
+            <div class="treding-itens"> 
+             <a href="detail/{{$item['id']}}">         
              <img  class="treding-images" src="{{$item['gallery']}}" alt= "..." >              
                        <div  class="">
-                       <o>{{$item['name']}}</p>            
+                       <p>{{$item['name']}}</p>            
                       </div> 
+              </a> 
             </div> 
             
        

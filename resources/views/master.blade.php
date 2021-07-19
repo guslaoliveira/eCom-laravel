@@ -55,6 +55,11 @@
         height: 100px;
       }
 
+      .detail-images {
+        height: 200px;
+      }
+
+
       .treding-itens {
           float: left;
           width: 10%;
